@@ -120,7 +120,7 @@ int main(int argc, char* argv[])
    iOffSet += sizeof(vg_data_pw_data);
    (void) memcpy( &vg_new_section[iOffSet], (BYTE *)PwdWindow, (DWORD)PwdWindow_End - (DWORD)PwdWindow );
 
- 	pe->AddCodeSection( ".x123y", vg_new_section, _MAX_SECTION_SIZE, _MAX_SECTION_DATA_SIZE_ );   
+ 	pe->AddCodeSection( ".naot", vg_new_section, _MAX_SECTION_SIZE, _MAX_SECTION_DATA_SIZE_ );   
 
 	// *** Save new exec
  	pe->SaveFile(argv[1]);
